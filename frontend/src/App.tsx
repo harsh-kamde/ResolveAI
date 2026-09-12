@@ -16,6 +16,11 @@ export default function App() {
     try {
       const data = await triageRequest(text);
       setResult(data);
+      // Scroll to result
+      setTimeout(() => {
+        const resultElement = document.querySelector(".result-card");
+        resultElement?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 100);
     } catch (err) {
       setError("Something went wrong analyzing this request. Please try again.");
       console.error(err);
@@ -27,7 +32,7 @@ export default function App() {
   return (
     <div className="app-shell">
       <header className="app-header">
-        <h1>ResolveAI</h1>
+        <h1>✨ ResolveAI</h1>
         <p>Turn an unstructured request into a routed, prioritized reply.</p>
       </header>
 

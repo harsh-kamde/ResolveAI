@@ -22,13 +22,13 @@ export default function RequestForm({ onSubmit, loading }: Readonly<RequestFormP
         className="request-textarea"
         value={text}
         onChange={(e) => setText(e.target.value)}
-        placeholder="Paste the client request here..."
-        rows={5}
+        placeholder="Paste the client request here and we'll analyze it for you..."
+        rows={6}
       />
       <div className="form-row">
         <SampleRequests onSelect={setText} />
         <button type="submit" className="primary-button" disabled={loading || text.trim().length < 5}>
-          {loading ? "Analyzing..." : "Analyze request"}
+          {loading ? "🔄 Analyzing..." : "✨ Analyze request"}
         </button>
       </div>
     </form>
