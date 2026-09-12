@@ -1,13 +1,13 @@
 import { useState } from "react";
+import SampleRequests from "./SampleRequests";
 
 interface RequestFormProps {
   onSubmit: (text: string) => void;
   loading: boolean;
-  initialText?: string;
 }
 
-export default function RequestForm({ onSubmit, loading, initialText = "" }: Readonly<RequestFormProps>) {
-  const [text, setText] = useState(initialText);
+export default function RequestForm({ onSubmit, loading }: Readonly<RequestFormProps>) {
+  const [text, setText] = useState("");
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -19,15 +19,18 @@ export default function RequestForm({ onSubmit, loading, initialText = "" }: Rea
   return (
     <form onSubmit={handleSubmit}>
       <textarea
+        className="request-textarea"
         value={text}
         onChange={(e) => setText(e.target.value)}
         placeholder="Paste the client request here..."
-        rows={6}
-        style={{ width: "100%", fontFamily: "inherit", fontSize: "1rem", padding: "0.75rem" }}
+        rows={5}
       />
-      <button type="submit" disabled={loading || text.trim().length < 5}>
-        {loading ? "Analyzing..." : "Analyze request"}
-      </button>
+      <div className="form-row">
+        <SampleRequests onSelect={setText} />
+        <button type="submit" className="primary-button" disabled={loading || text.trim().length < 5}>
+          {loading ? "Analyzing..." : "Analyze request"}
+        </button>
+      </div>
     </form>
   );
 }
