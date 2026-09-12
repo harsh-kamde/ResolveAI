@@ -17,7 +17,8 @@ if not API_KEY:
 
 client = genai.Client(api_key=API_KEY)
 
-MODEL_NAME = "gemini-2.5-flash-lite"
+# MODEL_NAME = "gemini-2.5-flash-lite"
+MODEL_NAME = "gemini-3.1-flash-lite"
 
 
 def triage_request(request_text: str) -> TriageResult:
