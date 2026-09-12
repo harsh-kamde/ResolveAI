@@ -10,6 +10,7 @@ app = FastAPI(title="ResolveAI Triage API")
 # Local Vite dev server + your deployed Vercel domain.
 origins = [
     "http://localhost:5173",
+    "https://resolve-ai-green.vercel.app",
 ]
 
 app.add_middleware(
