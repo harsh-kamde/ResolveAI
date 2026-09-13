@@ -2,6 +2,8 @@
 
 An AI-powered request triage and routing system that transforms unstructured client requests into prioritized, actionable tasks. Built with **Google Gemini AI**, **FastAPI**, **React**, and follows modern full-stack architecture principles for scalability and maintainability.
 
+Live Link: [resolve-ai-green.vercel.app](https://resolve-ai-green.vercel.app/)
+
 <img width="1280" height="614" alt="ResolveAI Dashboard" src="https://via.placeholder.com/1280x614/4F46E5/FFFFFF?text=ResolveAI+Intelligent+Triage" />
 
 ## 🚀 Features
