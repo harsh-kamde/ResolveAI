@@ -4,7 +4,9 @@ An AI-powered request triage and routing system that transforms unstructured cli
 
 Live Link: [resolve-ai-green.vercel.app](https://resolve-ai-green.vercel.app/)
 
-<img width="1280" height="614" alt="ResolveAI Dashboard" src="https://via.placeholder.com/1280x614/4F46E5/FFFFFF?text=ResolveAI+Intelligent+Triage" />
+<img width="1022" height="475" alt="image" src="https://github.com/user-attachments/assets/0384c534-cd1c-4c20-af87-9dcde86c5cf6" />
+<img width="967" height="776" alt="image" src="https://github.com/user-attachments/assets/a4793b79-0b46-4f1e-b44b-ca6483821031" />
+
 
 ## 🚀 Features
 
