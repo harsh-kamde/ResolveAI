@@ -1,4 +1,4 @@
-# ResolveAI: Intelligent Request Triage System 🤖     
+# ResolveAI: Intelligent Request Triage System 🤖      
 
 An AI-powered request triage and routing system that transforms unstructured client requests into prioritized, actionable tasks. Built with **Google Gemini AI**, **FastAPI**, **React**, and follows modern full-stack architecture principles for scalability and maintainability.
 
